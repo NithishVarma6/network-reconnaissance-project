@@ -1,0 +1,28 @@
+# Nmap 7.99 scan initiated Sat Jul  4 13:59:59 2026 as: /usr/lib/nmap/nmap -sV -p 22,53,139,445,7777,7778,8443 -oN raw-output/service-version.txt 10.48.84.93
+Nmap scan report for 10.48.84.93
+Host is up (0.057s latency).
+
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH 9.6p1 Ubuntu 3ubuntu13.16 (Ubuntu Linux; protocol 2.0)
+53/tcp   open  tcpwrapped
+139/tcp  open  netbios-ssn   Samba smbd 4
+445/tcp  open  netbios-ssn   Samba smbd 4
+7777/tcp open  http          nginx 1.28.2
+7778/tcp open  http          nginx 1.29.5
+8443/tcp open  ssl/https-alt dcv
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8443-TCP:V=7.99%T=SSL%I=7%D=7/4%Time=6A494A2A%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,61,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nServer:\x20dcv\
+SF:r\nDate:\x20Sat,\x2004\x20Jul\x202026\x2018:00:10\x20GMT\r\nContent-Len
+SF:gth:\x200\r\n\r\n")%r(HTTPOptions,61,"HTTP/1\.0\x20400\x20Bad\x20Reques
+SF:t\r\nServer:\x20dcv\r\nDate:\x20Sat,\x2004\x20Jul\x202026\x2018:00:11\x
+SF:20GMT\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,61,"HTTP/1\
+SF:.0\x20400\x20Bad\x20Request\r\nServer:\x20dcv\r\nDate:\x20Sat,\x2004\x2
+SF:0Jul\x202026\x2018:00:11\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(RTS
+SF:PRequest,3C,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nServer:\x20dcv\r\nCo
+SF:ntent-Length:\x200\r\n\r\n")%r(SIPOptions,3C,"HTTP/1\.0\x20400\x20Bad\x
+SF:20Request\r\nServer:\x20dcv\r\nContent-Length:\x200\r\n\r\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul  4 14:02:16 2026 -- 1 IP address (1 host up) scanned in 136.73 seconds

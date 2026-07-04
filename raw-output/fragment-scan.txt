@@ -1,0 +1,14 @@
+# Nmap 7.99 scan initiated Sat Jul  4 14:08:34 2026 as: /usr/lib/nmap/nmap -f -p 22,53,139,445,7777,7778,8443 -oN raw-output/fragment-scan.txt 10.48.84.93
+Nmap scan report for 10.48.84.93
+Host is up (0.058s latency).
+
+PORT     STATE    SERVICE
+22/tcp   filtered ssh
+53/tcp   filtered domain
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+7777/tcp filtered cbt
+7778/tcp filtered interwise
+8443/tcp filtered https-alt
+
+# Nmap done at Sat Jul  4 14:08:36 2026 -- 1 IP address (1 host up) scanned in 2.28 seconds
