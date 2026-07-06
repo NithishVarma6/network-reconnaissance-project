@@ -55,3 +55,30 @@ scanning-project/
 
 Performed network reconnaissance against a lab environment using Nmap, including host discovery, service/version enumeration, OS fingerprinting, and evasion techniques; documented findings in a professional reconnaissance report.
 
+## Task-wise Documentation
+
+Detailed process documentation for each network scanning task is available in the `documentation/` folder.
+
+Each task includes:
+- Objective
+- Command Used
+- Command Explanation
+- Procedure
+- Output Summary
+- Observation
+- Conclusion
+- Evidence Reference
+
+### Documented Tasks
+
+1. Host Discovery
+2. Full TCP Port Scan
+3. Service and Version Detection
+4. Manual HTTP Banner Grabbing
+5. Operating System Detection
+6. TCP SYN Scan
+7. TCP Connect Scan
+8. Packet Fragmentation Scan
+9. Slow Timing Scan
+
+[View Task-wise Scanning Documentation](documentation/README.md)
